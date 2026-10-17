@@ -21,10 +21,8 @@ window.RESUME_DATA = {
 			instagram: "https://www.instagram.com/wisamjbori/",
 		},
 	},
-
 	summary:
 		"Strategic, hands-on technology leader with 18+ years of global experience delivering high-availability Private Cloud ecosystems, carrier-grade data networks, and strict PCI-DSS & CIS hardened environments. Trusted by Fortune 500 partners and national telecom operators across the United States, UAE, and Iraq.",
-
 	metrics: [
 		{
 			value: "18+",
@@ -55,7 +53,6 @@ window.RESUME_DATA = {
 			color: "amber",
 		},
 	],
-
 	philosophy: {
 		title:
 			"Translating Complex Business Mandates into Resilient, Scalable Infrastructure",
@@ -77,7 +74,6 @@ window.RESUME_DATA = {
 			},
 		],
 	},
-
 	competencyCategories: [
 		{ id: "all", label: "All Domains" },
 		{ id: "routing", label: "Routing & Fabrics" },
@@ -85,7 +81,6 @@ window.RESUME_DATA = {
 		{ id: "security", label: "Security & Audit" },
 		{ id: "devops", label: "Software & DevOps" },
 	],
-
 	competencies: [
 		{
 			category: "routing",
@@ -195,7 +190,6 @@ window.RESUME_DATA = {
 			],
 		},
 	],
-
 	experience: [
 		{
 			company: "FastPay",
@@ -387,7 +381,6 @@ window.RESUME_DATA = {
 			],
 		},
 	],
-
 	education: [
 		{
 			category: "Bachelor's Degree",
@@ -410,7 +403,6 @@ window.RESUME_DATA = {
 			color: "indigo",
 		},
 	],
-
 	atsTaxonomy: [
 		"Wisam Hayder",
 		"Sam Jbori",

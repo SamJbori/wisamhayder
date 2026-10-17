@@ -9,6 +9,11 @@
   <meta name="description"
     content="Executive resume of Wisam Hayder - Head of IT & Enterprise Infrastructure Architect.">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://samjbori.github.io/wisamhayder/resume.html">
+  <meta property="og:title" content="Wisam Hayder - Executive Resume & CV">
+  <meta property="og:description"
+    content="Printable executive resume of Wisam Hayder - Head of Information Technology.">
+  <meta property="og:image" content="https://samjbori.github.io/wisamhayder/profile.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +38,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text);
       background-color: #f1f5f9;
       line-height: 1.5;
@@ -41,19 +46,18 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Floating Web Toolbar */
     .toolbar {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(15, 23, 42, 0.95);
+      background: rgba(15, 23, 42, .95);
       backdrop-filter: blur(8px);
       color: #fff;
       padding: 10px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
     }
 
     .toolbar a,
@@ -62,20 +66,20 @@
       text-decoration: none;
       font-size: 13px;
       font-weight: 500;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255, 255, 255, .25);
       padding: 6px 14px;
       border-radius: 6px;
-      background: transparent;
+      background: 0 0;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.2s;
+      transition: all .2s;
     }
 
     .toolbar a:hover,
     .toolbar button:hover {
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, .15);
     }
 
     .toolbar .btn-print {
@@ -88,17 +92,15 @@
       background: #0369a1;
     }
 
-    /* Resume Document Wrapper */
     .document-page {
       max-width: 900px;
       margin: 24px auto;
-      background: #ffffff;
+      background: #fff;
       padding: 40px 48px;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .08);
       border-radius: 8px;
     }
 
-    /* Header Profile */
     .header-table {
       display: flex;
       align-items: center;
@@ -108,14 +110,47 @@
       margin-bottom: 24px;
     }
 
-    .profile-photo {
+    .profile-photo-wrapper {
       width: 100px;
       height: 100px;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 1/1;
       border-radius: 12px;
-      object-fit: cover;
+      overflow: hidden;
       border: 2px solid var(--border);
       flex-shrink: 0;
+      position: relative;
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-fallback-box {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0284c7, #4f46e5);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      user-select: none;
+    }
+
+    .profile-fallback-box .initials {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .profile-fallback-box .caption {
+      font-size: 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 2px;
     }
 
     .header-details {
@@ -126,7 +161,7 @@
       font-size: 28px;
       font-weight: 800;
       color: var(--primary);
-      letter-spacing: -0.5px;
+      letter-spacing: -.5px;
       line-height: 1.1;
       margin-bottom: 4px;
     }
@@ -156,12 +191,11 @@
       color: var(--accent);
     }
 
-    /* Section Headers */
     .section-title {
       font-size: 13.5px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: .8px;
       color: var(--primary);
       border-bottom: 1.5px solid var(--border);
       padding-bottom: 4px;
@@ -178,7 +212,6 @@
       line-height: 1.6;
     }
 
-    /* Skills Grid */
     .skills-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -204,7 +237,6 @@
       line-height: 1.45;
     }
 
-    /* Experience Items */
     .job-entry {
       margin-bottom: 18px;
       page-break-inside: avoid;
@@ -266,7 +298,6 @@
       font-weight: 500;
     }
 
-    /* Education */
     .edu-entry {
       display: flex;
       justify-content: space-between;
@@ -283,13 +314,11 @@
       color: var(--secondary);
     }
 
-    /* INVISIBLE ATS KEYWORD LAYER:
-       Visible to PDF search engines & ATS parsers, visually imperceptible to humans */
     .ats-hidden-layer {
-      font-size: 0.1pt !important;
-      line-height: 0.01 !important;
+      font-size: .1pt !important;
+      line-height: .01 !important;
       color: transparent !important;
-      opacity: 0.01 !important;
+      opacity: .01 !important;
       user-select: none;
       height: 1px;
       overflow: hidden;
@@ -297,7 +326,6 @@
       padding: 0;
     }
 
-    /* PRINT RULES */
     @media print {
       @page {
         size: A4 portrait;
@@ -354,18 +382,16 @@
 
 <body>
 
-  <!-- Web-Only Floating Actions -->
-  <div class="toolbar no-print">
-    <div style="font-weight: 700; font-size: 14px;">Wisam Hayder &bull; Printable Executive Resume</div>
-    <div style="display: flex; gap: 10px;">
-      <a href="index.html">&larr; Back to Portfolio</a>
-      <button onclick="window.print()" class="btn-print">&#128438; Print / Save as PDF</button>
+  <!-- Screen Toolbar -->
+  <div class="no-print toolbar">
+    <div style="font-weight:700; font-size:14px;">Wisam Hayder • Printable Executive Resume</div>
+    <div style="display:flex; gap:10px;">
+      <a href="index.html">← Back to Portfolio</a>
+      <button class="btn-print" onclick="window.print()">🖶 Print / Save as PDF</button>
     </div>
   </div>
 
-  <main class="document-page" id="resume-container">
-    <!-- Populated by JavaScript from data.js -->
-  </main>
+  <main class="document-page" id="resume-container"></main>
 
   <!-- Load Data Source -->
   <script src="data.js"></script>
@@ -376,104 +402,99 @@
         document.getElementById("resume-container").innerHTML = "<p style='color:red;'>Error: data.js not found.</p>";
         return;
       }
+      const o = window.RESUME_DATA;
+      const t = document.getElementById("resume-container");
 
-      const d = window.RESUME_DATA;
-      const c = document.getElementById("resume-container");
-
-      // Build Header
       const headerHtml = `
         <header class="header-table">
-          <img src="${d.personal.profileImage}" alt="${d.personal.name}" class="profile-photo" onerror="this.style.display='none'">
+          <div class="profile-photo-wrapper">
+            <img src="${o.personal.profileImage}" alt="${o.personal.name}" class="profile-photo" onerror="this.style.display='none'; document.getElementById('resume-fallback').style.display='flex';">
+            <div id="resume-fallback" class="profile-fallback-box" style="display:none;">
+              <span class="initials">${o.personal.initials || 'WH'}</span>
+              <span class="caption">Wisam Hayder</span>
+            </div>
+          </div>
           <div class="header-details">
-            <h1>${d.personal.name}</h1>
-            <div class="headline">${d.personal.title}</div>
+            <h1>${o.personal.name}</h1>
+            <div class="headline">${o.personal.headline}</div>
             <div class="contact-bar">
-              <span>&#128205; ${d.personal.location}</span>
-              <span>&#9742; <a href="tel:${d.personal.phoneClean}">${d.personal.phone}</a></span>
-              <span>&#9993; <a href="mailto:${d.personal.email}">${d.personal.email}</a></span>
-              <span><a href="${d.personal.links.linkedin}" target="_blank">LinkedIn</a></span>
-              <span><a href="${d.personal.links.github}" target="_blank">GitHub</a></span>
-              <span><a href="${d.personal.links.instagram}" target="_blank">Instagram</a></span>
+              <span>&#128205; ${o.personal.shortLocation}</span>
+              <span>&#9742; <a href="tel:${o.personal.phoneClean}">${o.personal.phone}</a></span>
+              <span>&#9993; <a href="mailto:${o.personal.email}">${o.personal.email}</a></span>
+              <span><a href="${o.personal.links.linkedin}" target="_blank">LinkedIn</a></span>
+              <span><a href="${o.personal.links.github}" target="_blank">GitHub</a></span>
+              <span><a href="${o.personal.links.instagram}" target="_blank">Instagram</a></span>
             </div>
           </div>
         </header>
       `;
 
-      // Build Summary
       const summaryHtml = `
         <section>
           <div class="section-title">Executive Profile</div>
-          <p class="summary-text">${d.summary}</p>
+          <p class="summary-text">${o.summary}</p>
         </section>
       `;
 
-      // Build Competencies
-      const compList = d.competencies.map(cat => `
-        <div class="skill-category">
-          <div class="skill-category-name">${cat.category}</div>
-          <div class="skill-category-items">${cat.skills.join(" &bull; ")}</div>
-        </div>
-      `).join("");
       const compHtml = `
         <section>
           <div class="section-title">Core Competencies & Technical Expertise</div>
-          <div class="skills-container">${compList}</div>
+          <div class="skills-container">
+            ${o.competencies.map(e => `
+              <div class="skill-category">
+                <div class="skill-category-name">${e.title || e.category}</div>
+                <div class="skill-category-items">${e.skills.join(" &bull; ")}</div>
+              </div>
+            `).join("")}
+          </div>
         </section>
       `;
 
-      // Build Experience
-      const expList = d.experience.map(exp => `
-        <div class="job-entry">
-          <div class="job-header">
-            <div>
-              <span class="job-company">${exp.company}</span> &mdash; 
-              <span class="job-role">${exp.role}</span>
-              ${exp.note ? `<div style="font-size:11px; color:#64748b; font-style:italic;">${exp.note}</div>` : ""}
-            </div>
-            <div class="job-date-location">${exp.location} | ${exp.period}</div>
-          </div>
-          <ul class="job-bullets">
-            ${exp.highlights.map(h => `<li>${h}</li>`).join("")}
-          </ul>
-          <div class="job-tags">
-            ${exp.tags.map(t => `<span class="tag-badge">${t}</span>`).join("")}
-          </div>
-        </div>
-      `).join("");
       const expHtml = `
         <section>
           <div class="section-title">Professional Experience</div>
-          ${expList}
+          ${o.experience.map(e => `
+            <div class="job-entry">
+              <div class="job-header">
+                <div>
+                  <span class="job-company">${e.company}</span> &mdash; 
+                  <span class="job-role">${e.role}</span>${e.note ? `<div style="font-size:11px; color:#64748b; font-style:italic;">${e.note}</div>` : ""}
+                </div>
+                <div class="job-date-location">${e.location} \vert{}${e.period}</div>
+              </div>
+              <ul class="job-bullets">
+                ${e.highlights.map(h => `<li>${h}</li>`).join("")}
+              </ul>
+              <div class="job-tags">
+                ${e.tags.map(t => `<span class="tag-badge">${t}</span>`).join("")}
+              </div>
+            </div>
+          `).join("")}
         </section>
       `;
 
-      // Build Education
-      const eduList = d.education.map(edu => `
-        <div class="edu-entry">
-          <div>
-            <span class="edu-degree">${edu.degree}</span> &mdash; 
-            <span class="edu-school">${edu.institution}</span>
-          </div>
-          <span style="color:#64748b; font-size:12px;">${edu.location}</span>
-        </div>
-      `).join("");
       const eduHtml = `
         <section>
-          <div class="section-title">Education</div>
-          ${eduList}
+          <div class="section-title">Education & Credentials</div>
+          ${o.education.map(e => `
+            <div class="edu-entry">
+              <div>
+                <span class="edu-degree">${e.degree}</span> &mdash; 
+                <span class="edu-school">${e.institution}</span>
+              </div>
+              <span style="color:#64748b; font-size:12px;">${e.location}</span>
+            </div>
+          `).join("")}
         </section>
       `;
 
-      // Build Invisible ATS Keywords Layer
-      const atsWords = (d.atsTaxonomy || []).join(" ");
       const atsLayerHtml = `
         <div class="ats-hidden-layer" aria-hidden="true">
-          ${atsWords}
+          ${(o.atsTaxonomy || []).join(" ")}
         </div>
       `;
 
-      // Render Everything into the DOM
-      c.innerHTML = headerHtml + summaryHtml + compHtml + expHtml + eduHtml + atsLayerHtml;
+      t.innerHTML = headerHtml + summaryHtml + compHtml + expHtml + eduHtml + atsLayerHtml;
     });
   </script>
 </body>
