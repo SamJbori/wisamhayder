@@ -1,0 +1,314 @@
+// data.js - Single Source of Truth for Wisam Hayder
+window.RESUME_DATA = {
+  personal: {
+    name: "Wisam Hayder",
+    alternateName: "Sam Jbori",
+    initials: "WH",
+    title: "Head of Information Technology",
+    headline: "Head of IT @ FastPay • Fintech, Telecom & Banking Infrastructure Leader",
+    badge: "Enterprise Infrastructure Architect & Engineering Director",
+    company: "FastPay",
+    location: "Erbil, Iraq (Open to Global Relocation & Remote Advisory)",
+    shortLocation: "Erbil, Iraq",
+    email: "wisam.hayder@outlook.com",
+    phone: "+964 780 600 3399",
+    phoneClean: "+9647806003399",
+    profileImage: "profile.jpg",
+    links: {
+      linkedin: "https://www.linkedin.com/in/wisamhayder/",
+      github: "https://github.com/SamJbori",
+      instagram: "https://www.instagram.com/wisamjbori/"
+    }
+  },
+
+  summary: "Strategic, hands-on technology leader with 18+ years of global experience delivering high-availability Private Cloud ecosystems, carrier-grade data networks, and strict PCI-DSS & CIS hardened environments. Trusted by Fortune 500 partners and national telecom operators across the United States, UAE, and Iraq.",
+
+  metrics: [
+    {
+      value: "18+",
+      label: "Years Experience",
+      sublabel: "Fintech, Telecom, Banking",
+      icon: "fa-solid fa-briefcase",
+      color: "brand"
+    },
+    {
+      value: "4",
+      label: "Teams Directed",
+      sublabel: "Network, Systems, Sec, Support",
+      icon: "fa-solid fa-users",
+      color: "indigo"
+    },
+    {
+      value: "500+",
+      label: "Clients Supported",
+      sublabel: "Cisco Commercial & Enterprise",
+      icon: "fa-solid fa-building-columns",
+      color: "emerald"
+    },
+    {
+      value: "Multi-$M",
+      label: "DC Deployments",
+      sublabel: "Dallas, Phoenix, Erbil",
+      icon: "fa-solid fa-server",
+      color: "amber"
+    }
+  ],
+
+  philosophy: {
+    title: "Translating Complex Business Mandates into Resilient, Scalable Infrastructure",
+    pillars: [
+      {
+        icon: "fa-solid fa-network-wired",
+        title: "Architectural Rigor",
+        desc: "Nearly two decades mastering carrier routing, software-defined fabrics, and distributed storage engines. From BGP/MPLS backbones to modern Kubernetes & Ceph private clouds."
+      },
+      {
+        icon: "fa-solid fa-lock",
+        title: "Governance & Hardening",
+        desc: "Extensive regulatory governance handling national fintech and healthcare systems. Proven mastery in PCI-DSS 4.0 certification, CIS Server benchmarks, and Zero-Trust architecture."
+      },
+      {
+        icon: "fa-solid fa-chart-line",
+        title: "Operational Leadership",
+        desc: "Experience scaling cross-disciplinary engineering teams across the US, UAE, and Iraq. Bridge between executive C-suite stakeholders and high-velocity engineering divisions."
+      }
+    ]
+  },
+
+  competencyCategories: [
+    { id: "all", label: "All Domains" },
+    { id: "routing", label: "Routing & Fabrics" },
+    { id: "cloud", label: "Cloud & Compute" },
+    { id: "security", label: "Security & Audit" },
+    { id: "devops", label: "Software & DevOps" }
+  ],
+
+  competencies: [
+    {
+      category: "routing",
+      badge: "Carrier Routing",
+      title: "Carrier & Enterprise Routing",
+      desc: "Scalable dynamic routing, provider edge topologies, transit peering, and traffic engineering.",
+      icon: "fa-solid fa-route",
+      color: "sky",
+      skills: ["BGP", "MP-BGP", "MPLS", "OSPF", "IS-IS", "EVPN", "VXLAN", "IPsec", "GRE"]
+    },
+    {
+      category: "routing",
+      badge: "DC Fabrics",
+      title: "Data Center Fabrics & SD-WAN",
+      desc: "Next-gen spine-and-leaf fabrics, automated provisioning, and multi-branch enterprise SD-WAN.",
+      icon: "fa-solid fa-network-wired",
+      color: "indigo",
+      skills: ["Cisco Nexus (9K-2K)", "Cisco ACI", "ASR 1K", "VeloCloud", "Cisco IWAN", "Meraki", "VMware NSX", "Brocade VDX"]
+    },
+    {
+      category: "cloud",
+      badge: "Private Cloud",
+      title: "Cloud & Private Storage",
+      desc: "Bare-metal private clouds, software-defined storage, and hybrid cloud integration.",
+      icon: "fa-solid fa-cloud",
+      color: "purple",
+      skills: ["Ceph & MicroCeph", "Kubernetes (K8s)", "MicroCloud / LXD", "AWS", "Azure", "Cloudflare Enterprise", "OpenStack", "Vercel"]
+    },
+    {
+      category: "security",
+      badge: "Compliance",
+      title: "Security & Regulatory Compliance",
+      desc: "Financial & healthcare grade auditing, endpoint hardening, and zero-trust perimeter defense.",
+      icon: "fa-solid fa-shield-halved",
+      color: "emerald",
+      skills: ["PCI-DSS 4.0", "CIS Hardening", "PPI & HIPAA", "Palo Alto NGFW", "Fortinet FortiGate", "Cisco Firepower / ASA", "Zero Trust (ZTNA)"]
+    },
+    {
+      category: "devops",
+      badge: "Full-Stack Dev",
+      title: "Software Development & Scripting",
+      desc: "High-performance applications, systems programming, and modern API architecture.",
+      icon: "fa-solid fa-code",
+      color: "amber",
+      skills: ["TypeScript / JS", "Python", "Rust", "C++", "Next.js / React", "React Native", "REST / tRPC", "PostgreSQL"]
+    },
+    {
+      category: "devops",
+      badge: "Bare Metal",
+      title: "Systems Engineering & Compute",
+      desc: "Enterprise rack & blade server chassis, hypervisor platforms, and Linux OS administration.",
+      icon: "fa-solid fa-server",
+      color: "teal",
+      skills: ["Cisco UCS", "Dell PowerEdge", "HPE ProLiant", "Ubuntu / RHEL", "Debian / Alpine", "Docker", "Bash Automation"]
+    }
+  ],
+
+  experience: [
+    {
+      company: "FastPay",
+      role: "IT Manager / Head of Information Technology",
+      location: "Erbil, Iraq",
+      period: "02/2025 – Present",
+      isCurrent: true,
+      sector: "Fintech & Payments",
+      highlights: [
+        "Leading all IT operations across 4 distinct functional units: <strong>Network & Security, Systems Engineering, IT Compliance, and IT Support</strong>.",
+        "Architecting and commissioning a sovereign, high-availability Private Cloud powered by <strong>Ceph distributed storage</strong> and <strong>Kubernetes</strong> orchestration.",
+        "Enforcing strict <strong>PCI-DSS 4.0</strong> compliance across on-premise infrastructure, enforcing CIS Level 1 & 2 Server Hardening benchmarks.",
+        "Engineering resilient branch interconnectivity, SD-WAN failover, and zero-trust remote access architecture for distributed financial branches."
+      ],
+      tags: ["Kubernetes", "Ceph", "PCI-DSS 4.0", "CIS Hardening", "SD-WAN", "MikroTik CCR"]
+    },
+    {
+      company: "Seamless Connect",
+      role: "Technology Services Manager",
+      location: "United States (Remote)",
+      period: "03/2023 – 01/2025",
+      isCurrent: false,
+      sector: "Cloud Services & Modern SaaS",
+      highlights: [
+        "Joined as Full Stack Developer and rapidly promoted to direct Technology Services and Cloud Infrastructure.",
+        "Managed multi-disciplinary teams of software engineers and cloud infrastructure DevOps delivering fault-tolerant, high-throughput applications.",
+        "Architected edge-accelerated, serverless pipelines integrating <strong>Cloudflare Enterprise Tunnels</strong>, Cloudflare Workers, <strong>AWS</strong>, and <strong>Vercel</strong>."
+      ],
+      tags: ["Cloudflare Tunnels", "AWS", "Vercel", "TypeScript", "Next.js", "React Native"]
+    },
+    {
+      company: "Megamind Solutions",
+      role: "Solution Architect / Country Manager",
+      location: "Dubai, UAE",
+      period: "08/2021 – 08/2022",
+      isCurrent: false,
+      sector: "Enterprise Solutions & Presales",
+      highlights: [
+        "Built and expanded the company's UAE engineering organization and presales solution architecture practice from the ground up.",
+        "Direct architectural supervision and delivery governance on high-profile telecom and enterprise digital transformation projects.",
+        "Negotiated technical solutions and enterprise delivery milestones with C-Level and senior corporate executives."
+      ],
+      tags: ["Enterprise Architecture", "C-Level Advisory", "Presales Engineering", "Cloud Transformation"]
+    },
+    {
+      company: "LinkData Communication",
+      role: "Engineering Manager",
+      location: "Iraq",
+      period: "02/2020 – 07/2021",
+      isCurrent: false,
+      sector: "Telecommunications & Critical Infrastructure",
+      highlights: [
+        "Supervised the engineering department delivering major nationwide infrastructure: Korek 4G modernization, Ministry of Telecommunication DWM rollout, and Erbil data center construction.",
+        "Established standard operating procedures, hiring criteria, and professional engineering upskilling roadmaps."
+      ],
+      tags: ["4G LTE Modernization", "DWDM", "Data Center Construction", "Carrier Backbone"]
+    },
+    {
+      company: "Money Management International",
+      role: "Systems Engineer IV (Supervisor)",
+      location: "United States",
+      period: "08/2018 – 12/2019",
+      isCurrent: false,
+      sector: "Banking & Financial Services",
+      highlights: [
+        "Directed full architecture and build of two tier-3 enterprise data centers in <strong>Dallas, TX and Phoenix, AZ</strong>.",
+        "Partnered directly with premier banking institutions (<strong>Bank of America, JPMorgan Chase</strong>) defining managed integrations.",
+        "Acted as Tier-4 escalation lead for incident response while governing PCI-DSS and PPI compliance audits."
+      ],
+      tags: ["Data Center Buildout", "Bank of America", "JPMorgan Chase", "PCI-DSS", "Tier-4 Support"]
+    },
+    {
+      company: "Premera Blue Cross",
+      role: "Systems Engineer IV (Supervisor)",
+      location: "Washington, United States",
+      period: "04/2017 – 07/2018",
+      isCurrent: false,
+      sector: "Healthcare IT Infrastructure",
+      highlights: [
+        "Re-engineered infrastructure security to comply with Federal and State Personal Private Information (PPI/HIPAA) requirements.",
+        "Ensured 24/7/365 mission-critical service availability for corporate accounts including <strong>Amazon and Microsoft</strong>.",
+        "Architected Hybrid Cloud failover with Azure and AWS to dramatically reduce RTO/RPO; implemented revised Disaster Recovery (DR) plans."
+      ],
+      tags: ["HIPAA / PPI", "AWS", "Azure", "Disaster Recovery", "Amazon & Microsoft SLA"]
+    },
+    {
+      company: "Cisco Systems",
+      role: "Systems Engineer III",
+      location: "United States",
+      period: "07/2014 – 03/2017",
+      isCurrent: false,
+      sector: "Global Tech Vendor",
+      highlights: [
+        "Delivered architectural pre-sales and growth support for <strong>500+ commercial and enterprise clients</strong> across the regional territory.",
+        "Conducted Proof-of-Concepts (PoC) and Proof-of-Values (PoV) leading to multi-million dollar wins across Nexus switches, UCS, and ASA/Sourcefire security.",
+        "Led technical enablement seminars and technical hands-on training workshops for client engineering executives."
+      ],
+      tags: ["Cisco Nexus", "Cisco UCS", "Cisco ACI", "Presales Architecture", "PoC / PoV"]
+    },
+    {
+      company: "Brocade",
+      role: "Senior Network Engineer",
+      location: "United States",
+      period: "09/2013 – 06/2014",
+      isCurrent: false,
+      sector: "Data Center Networking",
+      highlights: [
+        "Directed systems integration for high-profile multi-million dollar data center refresh projects.",
+        "Provided Tier-3/4 consulting and performance troubleshooting for SAN fabrics and VDX switches."
+      ],
+      tags: ["Brocade VDX", "SAN Fabric", "Fiber Channel", "DC Refresh"]
+    },
+    {
+      company: "Korek Telecom",
+      role: "IT Infrastructure Services Manager",
+      location: "Iraq",
+      period: "08/2010 – 09/2013",
+      isCurrent: false,
+      sector: "Telecom Core",
+      highlights: [
+        "Evaluated and redesigned the national telecom infrastructure, data core network, and primary data center facility.",
+        "Introduced server virtualization and software-defined network methodologies into carrier backbone operations."
+      ],
+      tags: ["Telecom Core", "Virtualization", "Data Center Operations", "Carrier SLAs"]
+    },
+    {
+      company: "University of Baghdad",
+      role: "Senior Systems Engineer",
+      location: "Iraq",
+      period: "12/2006 – 04/2010",
+      isCurrent: false,
+      sector: "Academia & Testing Systems",
+      highlights: [
+        "Administered core campus network supporting faculties across the main campus.",
+        "Commissioned and managed testing centers for <strong>Microsoft, Cisco, Linux, Oracle, Prometric, and Pearson VUE</strong>."
+      ],
+      tags: ["Campus Network", "Testing Centers", "Linux Administration", "Backbone Routing"]
+    }
+  ],
+
+  education: [
+    {
+      category: "Bachelor's Degree",
+      degree: "Bachelor of Computer Science / Software Engineering",
+      institution: "Al-Rafidain University College",
+      location: "Baghdad, Iraq",
+      description: "Core specialization in software design, distributed networks, and computational algorithms.",
+      icon: "fa-solid fa-award",
+      color: "brand"
+    },
+    {
+      category: "Testing Center Director",
+      degree: "Enterprise Testing Center Supervision",
+      institution: "Prometric & Pearson VUE Administrator",
+      location: "Iraq",
+      description: "Authorized test proctoring & technical director for Cisco, Microsoft, Linux, and Oracle certification engines.",
+      icon: "fa-solid fa-certificate",
+      color: "indigo"
+    }
+  ],
+
+  atsTaxonomy: [
+    "Wisam Hayder", "Sam Jbori", "Head of Information Technology", "Enterprise Infrastructure Architect",
+    "Systems Engineering Leader", "FastPay", "Erbil", "Iraq", "Korek Telecom", "Cisco", "Brocade",
+    "Premera Blue Cross", "Money Management International", "BGP", "MP-BGP", "EVPN", "VXLAN", "OSPF",
+    "ISIS", "MPLS", "RSVP-TE", "Segment Routing", "Cisco Nexus 9000", "7000", "5000", "3000", "ACI", "APIC",
+    "UCS", "ISR", "ASR 1000", "Kubernetes", "K8s", "Ceph", "MicroCeph", "MicroCloud", "LXD", "Cloudflare Enterprise",
+    "Tunnels", "WAF", "Workers", "Vercel", "AWS", "Azure", "PCI-DSS 4.0", "CIS Benchmarks Hardening",
+    "TypeScript", "JavaScript", "Python", "Rust", "C++", "Next.js", "React Native", "Docker", "PostgreSQL",
+    "Linux", "Ubuntu", "RHEL", "VeloCloud", "SD-WAN", "Meraki", "Palo Alto NGFW", "Fortinet FortiGate", "Zero Trust"
+  ]
+};

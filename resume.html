@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisam Hayder - Resume</title>
+  
+  <meta name="description" content="Executive resume of Wisam Hayder - Head of IT & Enterprise Infrastructure Architect.">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #334155;
+      --accent: #0284c7;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg-card: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background-color: #f1f5f9;
+      line-height: 1.5;
+      font-size: 13.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Floating Web Toolbar */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .toolbar a, .toolbar button {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 6px 14px;
+      border-radius: 6px;
+      background: transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .toolbar a:hover, .toolbar button:hover {
+      background: rgba(255,255,255,0.15);
+    }
+    .toolbar .btn-print {
+      background: #0284c7;
+      border-color: #0284c7;
+      font-weight: 600;
+    }
+    .toolbar .btn-print:hover {
+      background: #0369a1;
+    }
+
+    /* Resume Document Wrapper */
+    .document-page {
+      max-width: 900px;
+      margin: 24px auto;
+      background: #ffffff;
+      padding: 40px 48px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    /* Header Profile */
+    .header-table {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+      aspect-ratio: 1 / 1;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+    }
+    .header-details { flex: 1; }
+    .header-details h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .header-details .headline {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 12.5px;
+      color: var(--secondary);
+    }
+    .contact-bar a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-bar a:hover { color: var(--accent); }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-top: 24px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .summary-text {
+      color: var(--secondary);
+      font-size: 13px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* Skills Grid */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 20px;
+      font-size: 12px;
+    }
+    .skill-category {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    .skill-category-name {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+    .skill-category-items {
+      color: var(--secondary);
+      line-height: 1.45;
+    }
+
+    /* Experience Items */
+    .job-entry {
+      margin-bottom: 18px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .job-company {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .job-role {
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 13px;
+    }
+    .job-date-location {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+      text-align: right;
+    }
+    .job-bullets {
+      margin-top: 6px;
+      padding-left: 18px;
+      color: var(--secondary);
+      font-size: 12.5px;
+    }
+    .job-bullets li {
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+    .job-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .tag-badge {
+      font-size: 10.5px;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 1px 7px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      font-weight: 500;
+    }
+
+    /* Education */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 13px;
+    }
+    .edu-degree { font-weight: 700; color: var(--primary); }
+    .edu-school { color: var(--secondary); }
+
+    /* INVISIBLE ATS KEYWORD LAYER:
+       Visible to PDF search engines & ATS parsers, visually imperceptible to humans */
+    .ats-hidden-layer {
+      font-size: 0.1pt !important;
+      line-height: 0.01 !important;
+      color: transparent !important;
+      opacity: 0.01 !important;
+      user-select: none;
+      height: 1px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* PRINT RULES */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 10mm 12mm;
+      }
+      body {
+        background: #fff;
+        font-size: 12px;
+        line-height: 1.45;
+        color: #000;
+      }
+      .no-print { display: none !important; }
+      .document-page {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+      .section-title {
+        margin-top: 16px;
+        margin-bottom: 8px;
+        border-bottom-color: #000;
+      }
+      .job-entry {
+        margin-bottom: 12px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .skills-container {
+        gap: 6px 12px;
+      }
+      .skill-category {
+        padding: 4px 8px;
+        border-color: #ddd;
+        background: #fafafa;
+      }
+      a { text-decoration: none; color: inherit; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Web-Only Floating Actions -->
+  <div class="toolbar no-print">
+    <div style="font-weight: 700; font-size: 14px;">Wisam Hayder &bull; Printable Executive Resume</div>
+    <div style="display: flex; gap: 10px;">
+      <a href="index.html">&larr; Back to Portfolio</a>
+      <button onclick="window.print()" class="btn-print">&#128438; Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <main class="document-page" id="resume-container">
+    <!-- Populated by JavaScript from data.js -->
+  </main>
+
+  <!-- Load Data Source -->
+  <script src="data.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!window.RESUME_DATA) {
+        document.getElementById("resume-container").innerHTML = "<p style='color:red;'>Error: data.js not found.</p>";
+        return;
+      }
+
+      const d = window.RESUME_DATA;
+      const c = document.getElementById("resume-container");
+
+      // Build Header
+      const headerHtml = `
+        <header class="header-table">
+          <img src="${d.personal.profileImage}" alt="${d.personal.name}" class="profile-photo" onerror="this.style.display='none'">
+          <div class="header-details">
+            <h1>${d.personal.name}</h1>
+            <div class="headline">${d.personal.title}</div>
+            <div class="contact-bar">
+              <span>&#128205; ${d.personal.location}</span>
+              <span>&#9742; <a href="tel:${d.personal.phoneClean}">${d.personal.phone}</a></span>
+              <span>&#9993; <a href="mailto:${d.personal.email}">${d.personal.email}</a></span>
+              <span><a href="${d.personal.links.linkedin}" target="_blank">LinkedIn</a></span>
+              <span><a href="${d.personal.links.github}" target="_blank">GitHub</a></span>
+              <span><a href="${d.personal.links.instagram}" target="_blank">Instagram</a></span>
+            </div>
+          </div>
+        </header>
+      `;
+
+      // Build Summary
+      const summaryHtml = `
+        <section>
+          <div class="section-title">Executive Profile</div>
+          <p class="summary-text">${d.summary}</p>
+        </section>
+      `;
+
+      // Build Competencies
+      const compList = d.competencies.map(cat => `
+        <div class="skill-category">
+          <div class="skill-category-name">${cat.category}</div>
+          <div class="skill-category-items">${cat.skills.join(" &bull; ")}</div>
+        </div>
+      `).join("");
+      const compHtml = `
+        <section>
+          <div class="section-title">Core Competencies & Technical Expertise</div>
+          <div class="skills-container">${compList}</div>
+        </section>
+      `;
+
+      // Build Experience
+      const expList = d.experience.map(exp => `
+        <div class="job-entry">
+          <div class="job-header">
+            <div>
+              <span class="job-company">${exp.company}</span> &mdash; 
+              <span class="job-role">${exp.role}</span>
+              ${exp.note ? `<div style="font-size:11px; color:#64748b; font-style:italic;">${exp.note}</div>` : ""}
+            </div>
+            <div class="job-date-location">${exp.location} | ${exp.period}</div>
+          </div>
+          <ul class="job-bullets">
+            ${exp.highlights.map(h => `<li>${h}</li>`).join("")}
+          </ul>
+          <div class="job-tags">
+            ${exp.tags.map(t => `<span class="tag-badge">${t}</span>`).join("")}
+          </div>
+        </div>
+      `).join("");
+      const expHtml = `
+        <section>
+          <div class="section-title">Professional Experience</div>
+          ${expList}
+        </section>
+      `;
+
+      // Build Education
+      const eduList = d.education.map(edu => `
+        <div class="edu-entry">
+          <div>
+            <span class="edu-degree">${edu.degree}</span> &mdash; 
+            <span class="edu-school">${edu.institution}</span>
+          </div>
+          <span style="color:#64748b; font-size:12px;">${edu.location}</span>
+        </div>
+      `).join("");
+      const eduHtml = `
+        <section>
+          <div class="section-title">Education</div>
+          ${eduList}
+        </section>
+      `;
+
+      // Build Invisible ATS Keywords Layer
+      const atsWords = (d.atsTaxonomy || []).join(" ");
+      const atsLayerHtml = `
+        <div class="ats-hidden-layer" aria-hidden="true">
+          ${atsWords}
+        </div>
+      `;
+
+      // Render Everything into the DOM
+      c.innerHTML = headerHtml + summaryHtml + compHtml + expHtml + eduHtml + atsLayerHtml;
+    });
+  </script>
+</body>
+</html>
